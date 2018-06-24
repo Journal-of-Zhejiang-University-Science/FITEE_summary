@@ -305,7 +305,12 @@
 		\
 		\else
 		{\raisebox{2pt}{\large \footnotemark[1]}} % default
-		%{\hspace{-3pt}\raisebox{2pt}{\large{\footnotemark[1]}}\raisebox{2pt}{$\enskip\!^\#$}} %% when it is the extension of a conference paper
+		\fi
+		%% when it is the extension of a conference paper
+		\ifx \ZUS@value@support \relax
+		\
+		\else
+		{\raisebox{4pt}{\footnotesize$\enskip\!\!^{\bm{\#}}$}} %% mark '#'
 		\fi
 	  \end{tabular}
 	  \vspace{-11pt}
